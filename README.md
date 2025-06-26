@@ -68,10 +68,7 @@ Visit the live application here:
 👉 [https://scanready-cv.netlify.app/](https://scanready-cv.netlify.app/)
 
 ## Screenshots
-
-![ScanReady CV Screenshot](![image](https://github.com/user-attachments/assets/09d61d3a-a4cc-42d5-948a-06e87180eabf)
-)
-)
+![image](https://github.com/user-attachments/assets/eec67678-8d9e-4817-83c2-a3307719c9f9)
 
 ## Contributing
 
