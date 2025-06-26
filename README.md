@@ -69,7 +69,8 @@ Visit the live application here:
 
 ## Screenshots
 
-![ScanReady CV Screenshot](![image](https://github.com/user-attachments/assets/0beba8da-e960-4a1e-9635-6aa41fb1caf9)
+![ScanReady CV Screenshot](![image](https://github.com/user-attachments/assets/09d61d3a-a4cc-42d5-948a-06e87180eabf)
+)
 )
 
 ## Contributing
