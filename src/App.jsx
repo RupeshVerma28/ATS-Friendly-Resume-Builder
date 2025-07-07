@@ -1,33 +1,26 @@
-import React, { useRef } from 'react';
-import Header from './components/Header';
-import ResumeForm from './components/ResumeForm';
-import ResumePreview from './components/ResumePreview';
-import Footer from './components/Footer';
-import Controls from './components/Controls';
+import React, { useState } from 'react';
+import LandingPage from './components/LandingPage';
+import ResumeBuilder from './components/ResumeBuilder';
 
 function App() {
-  const resumePreviewRef = useRef();
+  const [currentView, setCurrentView] = useState('landing'); // 'landing' or 'builder'
+
+  const handleStartCreating = () => {
+    setCurrentView('builder');
+  };
+
+  const handleBackToLanding = () => {
+    setCurrentView('landing');
+  };
 
   return (
-    <div className="flex flex-col min-h-screen bg-gray-50">
-      <Header />
-      <main className="flex-grow container mx-auto p-2 sm:p-4">
-        <Controls componentRef={resumePreviewRef} />
-        <div className="flex flex-col lg:flex-row gap-6 lg:gap-8">
-          <div className="w-full lg:w-1/2">
-            <ResumeForm />
-          </div>
-          <div className="w-full lg:w-1/2">
-            <div className="overflow-x-auto -mx-2 sm:mx-0">
-              <div className="inline-block">
-                <ResumePreview ref={resumePreviewRef} />
-              </div>
-            </div>
-          </div>
-        </div>
-      </main>
-      <Footer />
-    </div>
+    <>
+      {currentView === 'landing' ? (
+        <LandingPage onStartCreating={handleStartCreating} />
+      ) : (
+        <ResumeBuilder onBackToLanding={handleBackToLanding} />
+      )}
+    </>
   );
 }
 
